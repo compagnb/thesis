@@ -3,8 +3,8 @@
 ## Abstract
 ## Table of Contents
 ## Introduction
-   1.1 Motivations
-   1.2 Concept
+    1.1 Motivations
+    1.2 Concept
 ## Domains & Precedents (Research)
     2.1 Biometric trackers
     2.2 Healthkit & Modern Medical Uses
