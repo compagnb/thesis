@@ -2,7 +2,7 @@
 
 ### Abstract
 ### Table of Contents
-[### Introduction](https://github.com/compagnb/thesis/blob/master/writing/introduction.md)
+### [Introduction](https://github.com/compagnb/thesis/blob/master/writing/introduction.md)
 ### Domains & Precedents (Research)
     2.1 Biometric trackers
     2.2 Healthkit & Modern Medical Uses
