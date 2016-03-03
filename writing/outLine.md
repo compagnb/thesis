@@ -12,5 +12,7 @@
     2.4 Ownership of Data
     2.5 Machine Learning & Interpretation
 ### Methodology
+    3.1 Emancipating Data
+    3.2 Building AI
 ### Findings, Reflections, and Next Steps (Evaluation)
 ### Bibliography
