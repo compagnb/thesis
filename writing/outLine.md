@@ -13,4 +13,4 @@
     3.1 Emancipating Data
     3.2 Building AI
 ### Findings, Reflections, and Next Steps (Evaluation)
-### Bibliography
+### [Bibliography] (https://github.com/compagnb/thesis/blob/master/writing/readingList.md)
