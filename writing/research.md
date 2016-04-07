@@ -1,4 +1,4 @@
-2 DOMAINS & PRECEDENTS
+##2 DOMAINS & PRECEDENTS
 
 2.1 Processing Signals. Signal processing begins with information from the environment activating a sensory receptor. These receptors are specialized cells in the human body with the ability, like computational sensor components, to aggregate data from physical changes, or stimuli from the environment. These stimuli can be both external and internal, meaning that the data can be acquired within or outside of the body or computational system. 
 External stimuli encompass the five most commonly known senses: sensation/touch, vision, smell, taste, and sound. In addition to these traditional senses, equilibrium is also classified as an external stimulus. 
