@@ -10,5 +10,7 @@
 *   [Concept Mind Maps](https://github.com/compagnb/thesis/tree/master/work/mindmaps)
 *   [Interaction Flow Chart](https://github.com/compagnb/thesis/tree/master/work/flowchart)
 *   [Data Structures](https://github.com/compagnb/thesis/blob/master/work/dataStructure.md)
+*   [Emoji Sketches](https://drive.google.com/folderview?id=0B7Q2btjMB9GsajBpOGQ1bTR3V2c&usp=sharing)
+*   [Design Critique](https://drive.google.com/folderview?id=0B7Q2btjMB9Gsc1RXamxaUXIwcW8&usp=sharing)
 
 ## [Visualization](https://github.com/compagnb/thesis/tree/master/visualization/README.md)
