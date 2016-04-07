@@ -13,7 +13,7 @@
 *   [Emoji Sketches](https://drive.google.com/folderview?id=0B7Q2btjMB9GsajBpOGQ1bTR3V2c&usp=sharing)
 *   [Thesis Data Freeing & Back End](https://github.com/compagnb/basisExport)
 *   [Coding Samples](https://github.com/compagnb/thesis/work/earlyCoding)
-   *   [P5 Pie Chart](https://github.com/compagnb/thesis/tree/master/work/earlyCoding/pieChartExample)
+   *   [P5 Pie Chart](https://github.com/compagnb/thesis/tree/master/work/earlyCoding/pieChartExample) : [Live Example](http://b.parsons.edu/~compagnb/pgdv/thesisCodeEx/pieChartExample/index.html) 
    *   [D3 Pie Chart](https://github.com/compagnb/thesis/tree/master/work/earlyCoding/D3PieChartExample) 
    *   [D3 Line Chart](https://github.com/compagnb/thesis/tree/master/work/earlyCoding/D3LineChartExample)
    *   [D3 Multi Line Chart](https://github.com/compagnb/tree/master/thesis/work/earlyCoding/D3MultiLineChartExample) 
