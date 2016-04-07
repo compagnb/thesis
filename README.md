@@ -17,6 +17,7 @@
    *   [D3 Pie Chart](https://github.com/compagnb/thesis/tree/master/work/earlyCoding/D3PieChartExample) : [Live](http://b.parsons.edu/~compagnb/pgdv/thesisCodeEx//D3PieChartExample/pie.html) 
    *   [D3 Line Chart](https://github.com/compagnb/thesis/tree/master/work/earlyCoding/D3LineChartExample) : [Live](http://b.parsons.edu/~compagnb/pgdv/thesisCodeEx/D3LineChartExample/index.html) 
    *   [D3 Multi Line Chart](https://github.com/compagnb/tree/master/thesis/work/earlyCoding/D3MultiLineChartExample): [Live](http://b.parsons.edu/~compagnb/pgdv/thesisCodeEx/D3MultiLineChartExample/index.html)  
+   *   [3d Charts & Graphs](https://github.com/compagnb/thesis/tree/master/work/earlyCoding/3JS)
 *   [Design Critique](https://drive.google.com/folderview?id=0B7Q2btjMB9Gsc1RXamxaUXIwcW8&usp=sharing)
 
 ## [Visualization](https://github.com/compagnb/thesis/tree/master/visualization/README.md)
