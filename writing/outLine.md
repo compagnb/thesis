@@ -44,7 +44,7 @@
         E. If the subject does not own their data, what rights do they have?
         F. Do open-source methods effect ownership?
         G. Is it possible to regain ownership and sharing rights of this data?
-### 3. Methodology (Sharing In A Secure Environment)
+### 3. Methodology (Sharing In A Secure Environment -- dig deeper -- clarify-- IRB)
     3.1 Emancipating Data
         A. How can a subject gain access to raw data derived from consumer-based wearable technology?
         B. What answers would the subject wish to gain from accessing this data?
