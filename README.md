@@ -27,7 +27,6 @@
    *   [digime inspiration](https://github.com/compagnb/thesis/blob/master/work/sketches/digimeInpiration)
    *   [digime high fidelity](https://github.com/compagnb/thesis/blob/master/work/sketches/digime/digime.png)
    *   [digime Google Work In Progess Files](https://drive.google.com/folderview?id=0B7Q2btjMB9GsajBpOGQ1bTR3V2c&usp=sharing)
-
 *   [2nd Prototype Coding](https://github.com/compagnb/thesis/work/2ndPrototypeCoding)
    *   [Emotion HD](https://github.com/compagnb/thesis/tree/master/work/earlyCoding/2ndPrototypeCoding) : [Live](http://b.parsons.edu/~compagnb/pgdv/thesisCodeEx/emotionHD/index.html)
 
