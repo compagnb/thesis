@@ -27,12 +27,8 @@
    *   [digime inspiration](https://github.com/compagnb/thesis/blob/master/work/sketches/digimeInpiration)
    *   [digime high fidelity](https://github.com/compagnb/thesis/blob/master/work/sketches/digime/digime.png)
    *   [digime Google Work In Progess Files](https://drive.google.com/folderview?id=0B7Q2btjMB9GsajBpOGQ1bTR3V2c&usp=sharing)
-<<<<<<< HEAD
-   *   [feelin.it Update](https://docs.google.com/a/newschool.edu/presentation/d/1QP-DrLnYaUjHxo7-lKCbZf1gqhk3lhty71Vdobf8jf8/edit?usp=sharing)
-
-=======
->>>>>>> origin/master
 *   [2nd Prototype Coding](https://github.com/compagnb/thesis/work/2ndPrototypeCoding)
    *   [Emotion HD](https://github.com/compagnb/thesis/tree/master/work/earlyCoding/2ndPrototypeCoding) : [Live](http://b.parsons.edu/~compagnb/pgdv/thesisCodeEx/emotionHD/index.html)
+*   [feelin.it Update](https://docs.google.com/a/newschool.edu/presentation/d/1QP-DrLnYaUjHxo7-lKCbZf1gqhk3lhty71Vdobf8jf8/edit?usp=sharing)
 
 ## [Visualization](https://github.com/compagnb/thesis/tree/master/visualization/README.md)
