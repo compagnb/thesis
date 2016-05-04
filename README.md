@@ -38,3 +38,4 @@
    *   [Design Critique](https://drive.google.com/folderview?id=0B7Q2btjMB9Gsc1RXamxaUXIwcW8&usp=sharing)
 
 ## [Visualization](https://github.com/compagnb/thesis/tree/master/visualization/README.md)
+   *  [Landing Page](http://b.parsons.edu/~compagnb/pgdv/feelin/)
