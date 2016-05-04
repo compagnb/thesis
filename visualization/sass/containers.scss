@@ -1,0 +1,75 @@
+//_containers.scss
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+  .bgdbody{
+    background-attachment: fixed;
+    background-color: #272833;
+    background-image: url("../images/surf.png");
+    background-position: center center;
+    background-size: cover;
+  }
+  .site-wrapper {
+    display: table;
+    width: 100%;
+    height: 100%; /* For at least Firefox */
+    min-height: 100%;
+    /*-webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.50);
+    box-shadow: inset 0 0 100px rgba(0,0,0,.50); */
+  }
+  .site-wrapper-inner {
+    display: table-cell;
+    vertical-align: center;
+  }
+  .cover-container {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .login-container{
+    position: relative;
+    height: 425px;
+    margin-top: -20px;
+    margin-right: 25px;
+    margin-left: 25px;
+    background-color: rgba(219, 227, 239, 0.7);
+  }
+  .register-container{
+    position: relative;
+    margin-top: -20px;
+    margin-right: 25px;
+    margin-left: 25px;
+    padding: 25px 0;
+    background-color: rgba(219, 227, 239, 0.7);
+  }
+  .about-container{
+    position: relative;
+    margin-top: -20px;
+    margin-right: 25px;
+    margin-left: 25px;
+    padding: 25px 0;
+    background-color: rgba(219, 227, 239, 0.7);
+  }
+  .howitworks-container{
+    position: relative;
+    margin-top: -20px;
+    margin-right: 25px;
+    margin-left: 25px;
+    padding: 25px 0;
+    background-color: rgba(219, 227, 239, 0.7);
+  }
+  .journalentry-container{
+    position: relative;
+    margin-top: 25px;
+    margin-right: 25px;
+    margin-left: 25px;
+    padding: 25px 0;
+    background-color: rgba(219, 227, 239, 0.7);
+  }
+  .journalhome-container{
+    position: relative;
+    margin-top: 25px;
+    margin-right: 25px;
+    margin-left: 25px;
+    padding: 25px 0;
+    height: 1000px;
+    background-color: rgba(219, 227, 239, 0.7);
+  }

@@ -1,0 +1,66 @@
+//_nav.scss
+
+.mobile{
+  display: none;
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+.mobile div{
+    display: none;
+}
+.mobile button{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border: 0;
+    overflow: hidden;
+    background: url(../images/hamburger.png) center no-repeat;
+    background-size: 80%;
+    width: 30px;
+    height: 30px;
+}
+.mobile .mobile-menu{
+   position: absolute;
+   top: 15px;
+   margin-left: 2em;
+   list-style: none;
+   z-index: 1;
+}
+.mobile-menu li{
+   float: left;
+   padding-left: 25px;
+}
+
+.mobile-menu > li > a:hover,
+.mobile-menu > li > a:focus {
+    color: $waterblue-color;
+  }
+.mobile-menu > .active > a{
+    color: $waterblue-color;
+  }
+.mobile-menu > .active > a:hover,
+.mobile-menu > .active > a:focus {
+    color: $waterblue-color;
+  }
+.mobile{
+    display: block;
+ }
+
+.journal-menu #new-post img,
+.journal-menu #search-post img,
+.journal-menu #filter-post img,
+.journal-menu #read-post img{
+  height: 35px;
+}
+.journal-menu {
+   position: absolute;
+   top: 15px;
+   margin-left: .8em;
+   z-index: 1;
+}
+.journal-menu li{
+   float: left;
+   padding-left: 50px;
+}
+

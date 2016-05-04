@@ -1,0 +1,314 @@
+//_med.scss
+
+  @media (min-width: 768px) {
+  .masthead-brand {
+    float: left;
+    margin:0em;
+  }
+  .masthead-nav {
+    float: right;
+    margin:0em;
+  }
+  .masthead-nav > li {
+  display: inline-block;
+  padding: 1em;
+  }
+  .login .masthead{
+    position: absolute;
+    margin-top: -113px;
+    width: 100%;
+  }
+  .login .site-wrapper-inner {
+    position: absolute;
+    margin-top: 113px;
+    width: 100%;
+  }
+  .login-container {
+    position: relative;
+    height: 425px;
+    margin-top: 62px;
+    margin-right: 25px;
+    margin-left: 25px;
+    background-color: rgba(219, 227, 239, 0.7);
+  }
+
+  .register .masthead{
+    position: absolute;
+    margin-top: -113px;
+    width: 100%;
+  }
+  .register .site-wrapper-inner {
+    position: absolute;
+    margin-top: 113px;
+    width: 100%;
+  }
+  .register-container {
+    position: relative;
+    margin-top: 62px;
+    margin-right: 25px;
+    margin-left: 25px;
+    background-color: rgba(219, 227, 239, 0.7);
+  }
+
+  .about .masthead{
+    position: absolute;
+    margin-top: -113px;
+    width: 100%;
+  }
+  .about .site-wrapper-inner {
+    position: absolute;
+    margin-top: 113px;
+    width: 100%;
+  }
+  .about-container {
+    position: relative;
+    margin-top: 62px;
+    margin-right: 25px;
+    margin-left: 25px;
+    background-color: rgba(219, 227, 239, 0.7);
+  }
+
+  .howitworks .masthead{
+    position: absolute;
+    margin-top: -113px;
+    width: 100%;
+  }
+  .howitworks .site-wrapper-inner {
+    position: absolute;
+    margin-top: 113px;
+    width: 100%;
+  }
+  .howitworks-container {
+    position: relative;
+    margin-top: 62px;
+    margin-right: 25px;
+    margin-left: 25px;
+    background-color: rgba(219, 227, 239, 0.7);
+  }
+  .active  a{
+    visibility: visible;
+  }
+  .hidden {
+  visibility: visible !important;
+  }
+  .visible {
+  visibility: hidden;
+  }
+
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+  .cover {
+  padding: 0 20px;
+  margin-top: -40px;
+  margin-left: 500px;
+  }
+  .btn-default{
+  background-color: rgba(243, 230, 201, 0.3);
+  box-shadow: none;
+  border-radius: .3em;
+  }
+
+  .btn-default:hover,
+  .btn-default:focus {
+  background-color: rgba(243, 230, 201, 0.1);
+  }
+  .cover .btn-lg {
+  padding: 10px 20px;
+  color: #f3e6c9 !important;
+  font-weight: 400;
+  }
+  .login-mastfoot{
+    visibility: visible;
+  }
+  .fb-connect{
+    margin-top: 5px;
+  }
+  .reminder-links{
+    position: absolute;
+    top: 110px;
+    text-align: left;
+    margin-left: 190px;
+    width:30%;
+  }
+  .formtxt {
+    width: 40%;
+    margin-bottom: 10px;
+    margin-left: -40px;
+    float:left;
+  }
+  .btn-login{
+    margin-top: 120px;
+    margin-left: -70px;
+    clear: both;
+  }
+  .ortxt{
+    clear: both;
+    font-size: .8em;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 30px;
+  }
+  .form-signin .checkbox {
+    width:100%;
+    margin-left: 40px;
+  }
+  .hs{
+    background-image: url("../images/compagnb_hs.jpg");
+    background-size: 375px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 375px;
+    float: left;
+    margin-left: 5%;
+    margin-right: 1em;
+    margin-top: 0px;
+
+  }
+  .productshot1{
+    background-image: url("../images/productshots_med.png");
+    background-size: 375px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 375px;
+    height: 700px;
+    margin-top: 0px;
+    margin-left: 5%;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    padding: 3em, 3em;
+    float: left;
+  }
+  .productshot2{
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+  }
+  .productshot3{
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+  }
+  .about-container .content h1{
+    color: #5c0e5c;
+    font-size: 1em;
+    font-style: bold;
+    margin-top: 0px;
+    padding-top: .5em;
+    margin-bottom: 0px;
+    margin-left: 5%;
+    text-align: left;
+   }
+
+  .about-container .content p{
+    font-size: .8em;
+    text-align: left;
+    margin-bottom: 1.5em;
+    width: 90%;
+    margin-left: 5%;
+
+  }
+
+  .about-container .content a{
+    color: #5c0e5c;
+    font-style: bold;
+  }
+
+.mobile{
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
+ }
+
+#navbar {
+  margin: 0;
+  margin-top: 20px;
+  padding: 1em;
+  font-size: 1em;
+}
+#navbar li {
+  list-style: none;
+  float: right;
+  padding: .1em;
+
+}
+#navbar li a {
+  display: block;
+  padding: 3px 2px;
+  text-decoration: none;
+  margin-top: -20px;
+  padding-right: 20px;
+}
+#navbar li .submenu a {
+  display: block;
+  padding: 3px 2px;
+  text-decoration: none;
+  margin-top: 0px;
+  padding-right: 20px;
+}
+
+#navbar li .submenu a:hover {
+ color: $waterblue-color;;
+}
+
+#navbar li ul {
+  display: none;
+  width: 1em;
+
+}
+
+#navbar li:hover ul {
+  display: block;
+  position: absolute;
+  width: 4em;
+  padding: .5em;
+  background-color: $ltsun3-color;
+}
+
+#navbar li:hover li {
+  float: none;
+}
+
+#navbar li:hover li a {
+
+}
+
+#navbar li li a:hover {
+  ;
+}
+
+.inner .user-nav {
+  visibility: hidden;
+  visibility: visible;
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin-top: 40px;
+}
+
+.profile-pict img{
+  visibility: visible;
+  position: relative;
+  float: right;
+  margin-top: 0px;
+  margin-right: 1em;
+  width: 50px;
+}
+
+}

@@ -1,0 +1,118 @@
+//_big.scss
+
+@media (min-width: 992px) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%;
+  }
+  .cover {
+  padding: 0 20px;
+  margin-top: -40px;
+  margin-left: 600px;
+  }
+  .btn-default{
+  background-color: rgba(243, 230, 201, 0.3);
+  box-shadow: none;
+  border-radius: .3em;
+  }
+
+  .btn-default:hover,
+  .btn-default:focus {
+  background-color: rgba(243, 230, 201, 0.1);
+  }
+
+  .cover .btn-lg {
+  padding: 10px 20px;
+  color: #f3e6c9;
+  font-weight: 400;
+  }
+
+ .hs{
+    background-image: url("../images/compagnb_hs.jpg");
+    background-size: 350px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 350px;
+    float: left;
+    margin-left: 5%;
+    margin-right: 1em;
+    margin-top: 0px;
+  }
+  .productshot1{
+    background-image: url("../images/productshot_large.png");
+    background-size: 350px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 350px;
+    height: 350px;
+    margin-top: 0px;
+    margin-left: 5%;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    padding: 3em, 3em;
+    clear:both;
+  }
+  .productshot2{
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+  }
+  .productshot3{
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+  }
+
+  .about-container .content h1{
+    color: #5c0e5c;
+    font-size: 1em;
+    font-style: bold;
+    margin-top: 0px;
+    padding-top: 1em;
+    margin-bottom: 0px;
+    margin-left: 5%;
+    text-align: left;
+   }
+
+  .about-container .content p{
+    font-size: .8em;
+    text-align: left;
+    margin-bottom: .5em;
+    width: 90%;
+  }
+
+  .about-container .content a{
+    color: #5c0e5c;
+    font-style: bold;
+  }
+
+  .about-container .content .howcani p{
+    padding-bottom: 6%;
+  }
+
+  .howcani-container .content h1{
+    color: #5c0e5c;
+    font-size: 1em;
+    font-style: bold;
+    margin-top: 0px;
+    padding-top: 1em;
+    margin-bottom: 0px;
+    margin-left: 5%;
+    text-align: left;
+   }
+
+  .howcani-container .content p{
+    font-size: .8em;
+    text-align: left;
+    margin-bottom: .5em;
+    width: 90%;
+  }
+
+  .howcani-container .content a{
+    color: #5c0e5c;
+    font-style: bold;
+  }
+}
+
+

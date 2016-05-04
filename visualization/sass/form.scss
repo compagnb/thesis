@@ -1,0 +1,207 @@
+//_form.scss
+
+ /* Form */
+
+  .form-signin {
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+  }
+  .form-signin .form-signin-heading,
+  .form-signin .checkbox {
+    margin-bottom: 20px;
+  }
+  .form-signin .checkbox {
+    font-size: .8em;
+    font-weight: 300;
+  }
+  .form-signin .form-control {
+    position: relative;
+    height: auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
+  }
+  .form-signin .form-control:focus {
+    border-color: #0e2c5d;
+    z-index: 2;
+  }
+  .form-signin input[type="username"],
+  .form-signin input[type="password"],
+  .form-signin input[type="text"] {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -o-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    -moz-transition: border-color 0.2s ease-in-out;
+    -webkit-transition: border-color 0.2s ease-in-out;
+    -o-transition: border-color 0.2s ease-in-out;
+    -ms-transition: border-color 0.2s ease-in-out;
+    transition: border-color 0.2s ease-in-out;
+    background: white;
+    border-radius: 4px;
+    border: solid 1px $ltwhite-color;
+    padding: .25em .25em;
+    text-decoration: none;
+    margin: .3em;
+    font-weight: 300;
+    color: #0e2c5d;
+    font-size: 1em;
+  }
+  .form-p input[type="username"],
+  .form-p input[type="password"],
+  .form-p input[type="text"] {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -o-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    -moz-transition: border-color 0.2s ease-in-out;
+    -webkit-transition: border-color 0.2s ease-in-out;
+    -o-transition: border-color 0.2s ease-in-out;
+    -ms-transition: border-color 0.2s ease-in-out;
+    transition: border-color 0.2s ease-in-out;
+    background: white;
+    border-radius: 4px;
+    border: solid 1px $ltwhite-color;
+    padding: .25em .25em;
+    text-decoration: none;
+    margin: .3em;
+    font-weight: 300;
+    color: #0e2c5d;
+    font-size: 1em;
+  }
+
+  .activitytrack{
+    display:block;
+    margin: auto;
+    width: 60%;
+    margin-top: 5px;
+    height: 2em;
+    color: #0e2c5d;
+    background-color:#fff;
+    border:1px solid #0e2c5d;
+    border-radius: 4px;
+/*    -webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow:inset 0 1px 1px rgba(0,0,0,.075);*/
+  }
+  .anxietyslider {
+    font-size: .8em;
+    font-weight: 300;
+    height: 30px;
+  }
+
+  input[type='range'] {
+    -webkit-appearance: none;
+    position: absolute;
+    left: 50%;
+    transform: translate(-60%, -40%);
+    border-radius: 5px;
+    height: 5px;
+    clear: both;
+    background-color: $purple-color;
+    margin: 0 10px;
+  }
+  input[type='range']::-moz-range-track {
+    -moz-appearance: none;
+    border-radius: 5px;
+    background-color: $waterblue-color;
+    height: 10px;
+  }
+  input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    border-radius: 20px;
+    background-color: $lightsun-color;
+    height: 20px;
+    width: 20px;
+  }
+  input[type='range']::-moz-range-thumb {
+    -moz-appearance: none;
+    border-radius: 20px;
+    background-color: $lightsun-color;
+    height: 20px;
+    width: 20px;
+  }
+  .anxietyslider .calm {
+    position: absolute;
+    left: 50%;
+    transform: translate(-500%, -40%)
+  }
+  .anxietyslider .anxious{
+    position: absolute;
+    left: 50%;
+    transform: translate(300%, -50%)
+  }
+  .form-p{
+    clear: both;
+  }
+
+  .journalentry .form-p input[type="text"]{
+    text-align: center;
+  }
+
+  .journalentry .form-p textarea{
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      -o-appearance: none;
+      -ms-appearance: none;
+      appearance: none;
+      -moz-transition: border-color 0.2s ease-in-out;
+      -webkit-transition: border-color 0.2s ease-in-out;
+      -o-transition: border-color 0.2s ease-in-out;
+      -ms-transition: border-color 0.2s ease-in-out;
+      transition: border-color 0.2s ease-in-out;
+      background: white;
+      border-radius: 4px;
+      border: solid 1px $ltwhite-color;
+      padding: .25em .25em;
+      text-decoration: none;
+      margin: .3em;
+
+  }
+#entry {
+  font-weight: 300;
+  color: #0e2c5d;
+  font-size: .8em;
+  font-family: $font-stack;
+  width: 70%;
+  height: 150px;
+  border: solid 1px $ltwhite-color;
+  border-radius: 4px
+}
+.char-remain{
+  margin: -10px;
+  font-weight: 300;
+  font-size: .8em;
+  font-style: none;
+}
+.char-remain input{
+  background: url('images/clear.png');
+  border: 0;
+  color: $waterblue-color;
+  font-family: $font-stack;
+  padding: 1em;
+  font-size: .9em;
+}
+
+.datepicker {
+  font-weight: 300;
+  font-size: .8em;
+  font-style: none;
+  border-radius: 4px
+}
+
+.entry {
+  font-weight: 300;
+  font-size: .8em;
+  font-style: none;
+  margin-top: 15px;
+
+}
+
+
+
+

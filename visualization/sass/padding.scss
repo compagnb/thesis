@@ -1,0 +1,213 @@
+//_padding.scss
+
+/* Padding for spacing */
+  .inner {
+    padding: 10px;
+  }
+  .session{
+    margin: 0;
+  }
+  canvas {
+    width: 100%;
+    height: 100%
+  }
+  .reminder-links{
+    padding: 20px;
+    font-size: .8em;
+  }
+  .reminder-links p{
+    padding: 7px;
+  }
+  .signup-txt{
+    font-size: .7em;
+  }
+   .fb-connect{
+    background-image: url("../images/facebookconnect.png");
+    background-size: 50px;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    margin-top: 12px;
+    margin-left: 15px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    float: left;
+  }
+  .fb-register{
+    background-image: url("../images/fbregister.png");
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 60px;
+    margin-top: 0;
+    margin: .3em;
+    padding: 2.5em, 2.5em;
+    float: left;
+  }
+  .fb-txt{
+    font-size: .8em;
+    margin-top: 7px;
+    text-align: left;
+  }
+  .fb-regtxt{
+    clear: both;
+    font-size: .8em;
+    text-align: center;
+    margin-top: 23px;
+    margin-bottom: 10px;
+  }
+  .ortxt{
+    clear: both;
+    font-size: .8em;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .hs{
+    background-image: url("../images/compagnb_hs.jpg");
+    background-size: 375px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 150px;
+    padding: 2.5em, 2.5em;
+    float: left;
+  }
+  .productshot1{
+    background-image: url("../images/productshot_01.jpg");
+    background-size: 375px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 150px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 2.5em, 2.5em;
+    float: left;
+  }
+  .productshot2{
+    background-image: url("../images/productshot_02.png");
+    background-size: 375px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 218px;
+    margin-top: -1.7em;
+    margin-bottom: 1em;
+    padding: 2.5em, 2.5em;
+    float: left;
+  }
+  .productshot3{
+    background-image: url("../images/productshot_03.jpg");
+    background-size: 375px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 150px;
+    margin-top: -1.7em;
+    margin-bottom: 1em;
+    padding: 2.5em, 2.5em;
+    float: left;
+  }
+  .about-container .content h1{
+    color: #5c0e5c;
+    font-size: 1em;
+    font-style: bold;
+    margin: 1em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: left;
+  }
+  .about-container .content p{
+    font-size: .8em;
+    margin: 1em;
+    text-align: left;
+    margin-bottom: 3em;
+  }
+  .about-container .content a{
+    color: #5c0e5c;
+    font-style: bold;
+  }
+
+  .howitworks-container .content h1{
+    color: #5c0e5c;
+    font-size: 1em;
+    font-style: bold;
+    margin: 1em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: left;
+  }
+  .howitworks-container .content p{
+    font-size: .8em;
+    margin: 1em;
+    text-align: left;
+    margin-bottom: 3em;
+  }
+  .howitworks-container .content a{
+    color: #5c0e5c;
+    font-style: bold;
+  }
+
+  .jen{
+    background-image: url("../images/jen_hs.png");
+    background-size: 375px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 150px;
+    padding: 2.5em, 2.5em;
+    float: left;
+  }
+  .howitworks .casestudyjen p{
+  margin-bottom: 1em;
+  }
+
+
+  .line:after,
+  .line:before{
+    content:" \00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0 ";
+    text-decoration:line-through;
+    display: inline-block;
+  }
+
+
+  .login-mastfoot{
+    visibility: hidden;
+  }
+  .form-p{
+    padding: 10px;
+  }
+  .signupcont{
+    padding: 20px;
+  }
+  .signupcont p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-style: italic;
+  }
+  .form-p em{
+    font-size: .6em;
+    font-weight: 100;
+    font-style: italic;
+  }
+
+.inner .user-nav {
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
+  }
+
+.user-nav .profile-pict img{
+    width: 0px;
+    height: 0px;
+  }
+
+.posts {
+  position: relative;
+  background-color: $ltwhite-color;
+  width: 75%;
+  height: 150px;
+  margin: 10px;
+}

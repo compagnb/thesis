@@ -1,0 +1,50 @@
+/*
+  * Barbara Compagnoni
+  * feelin.it: exploring emotional responses through biometrics
+  * Adv Web & Thesis
+  * Spring 2015
+ */
+
+// Setting Reset --------------------------------------------------------
+@import 'reset';
+
+//Fonts -----------------------------------------------------------------
+
+//Google Font Import ----------------------------------------------------
+
+@import url(https://fonts.googleapis.com/css?family=Jura:);
+
+//@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+//Font Variables -------------------------------------------------------
+$font-stack:'Jura', sans-serif;
+//$font-stack3:'Roboto', sans-serif;
+$font-stack2: "HelveticaNeue-Light", sans-serif;
+
+//Color Variables --------------------------------------------------------
+$lightsun-color: #f3e6c9;
+$ltsun3-color: rgba(243, 230, 201, 0.3);
+$purple-color: #890d80;
+$waterblue-color: #0e2c5c;
+$ltwhite-color: rgba(255,255,255,.5);
+$white: #fff;
+
+
+
+// Setting base --------------------------------------------------------
+@import 'base';
+
+// Setting Links --------------------------------------------------------
+@import 'link';
+
+// Setting Header --------------------------------------------------------
+@import 'header';
+
+// Setting Nav --------------------------------------------------------
+@import 'nav';
+
+// Setting cover --------------------------------------------------------
+//@import 'cover';
+
+
+
