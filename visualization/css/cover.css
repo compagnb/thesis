@@ -161,17 +161,21 @@ a:focus, a:hover {
    width: 100%;
    top: 2%;
    margin-bottom: 4%;
+   text-align: left;
 }
 .self .brand{
    font-weight: 300;
    font-size: 2.5em;
    letter-spacing: -0.025em;
+   margin-left: 2%;
+   margin-top: 1%;
 }
 
 .self .tagline {
    font-weight: 100;
    font-size: .75em;
    letter-spacing: -0.025em;
+   margin-left: 2%;
 }
 
 .landing #inner{
@@ -181,19 +185,27 @@ a:focus, a:hover {
 }
 
 #emojiLanding{
+  position: relative;
+  width: 100%;
+  height: 40%;
   margin-bottom: 3%;
+  text-align:center;
+
 }
-canvas{
+/*canvas{
+  width: 1000px;
+  height: 100px;
   margin-bottom: 3%;
-}
+}*/
 
 #emojiLanding i{
    font-size: 3em;
 }
 
-/*#emojiLanding img{
-   height: 80px;
-}*/
+#emojiLanding img{
+
+   /*height: 80px;*/
+}
 
 #loginButtons{
    width: 10%;
