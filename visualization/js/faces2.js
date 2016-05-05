@@ -1,5 +1,5 @@
 var x, y, m, old_second, index;
-var imageWidth = 140;
+var imageWidth = 60;
 var imgNames = ['angry', 'confused', 'disappointed_relieved','grimacing','grinning', 'neutral_face', 'no_mouth', 'stuck_out_tongue','worried'];
 // var imgNames = ['angry', 'blush', 'confounded', 'confused', 'cry', 'disappointed_relieved','grimacing','grinning', 'hushed', 'neutral_face', 'no_mouth', 'stuck_out_tongue', 'unamused', 'wink', 'worried', 'pizza'];
 
@@ -34,7 +34,7 @@ function setup() {
   }
 
   // for (var h = faces.length-0; h >= 0; h--) {
-  //   // faces[h].display();
+  //   faces[h].display();
   // }
 }
 
@@ -52,7 +52,7 @@ function draw() {
 
 
 function face (img, i) {
-    this.x = windowWidth + margin - imageWidth * i;
+    this.x = width + margin - imageWidth * i;
     this.y = imageWidth/2;
     this.img = img;
 
@@ -91,6 +91,7 @@ function windowResized() {
     // console.log(imgArray[index]);
     faces.push(b);
   }
+  console.log(width);
   // console.log(faces.length)
 
   // for (var i = 17; i < 0; i++){
