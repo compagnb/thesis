@@ -32,7 +32,7 @@
    </head>
 
   <body class="landing">
-    <div id ="header">
+       <div id ="header">
 <!--       <nav class="mobile">
         <button></button>
         <div>
@@ -48,40 +48,46 @@
       <h2 class="tagline">sharing our emotional selves through biometrics</h2>
       <nav class="nonmobile">
         <ul class="nonmobile-nav">
-          <li class="active"><a href="login.html">login</a></li>
-          <li class="active"><a href="about.html">about</a></li>
-          <li class="active"><a href="howitworks.html">how it works</a></li>
-          <li class="active"><a href="register.html">sign up</a></li>
+          <li class="active"><a href="./index2.php?action=login">login</a></li>
+          <li class="active"><a href="./index2.php?action=about">about</a></li>
+          <li class="active"><a href="./index2.php?action=howitworks">how it works</a></li>
+          <li class="active"><a href="./index2.php?action=register">sign up</a></li>
         </ul>
       </nav>
       <!-- <h4>exploring emotional responses through biometrics</h4> -->
     </div>
 
     <div id ="inner">
-      <div id="emojiLanding">
-        <!-- <img src="images/excited_emoji.png" alt="excited emoji"> -->
-        <!-- <i class="em em-grimacing"></i> -->
-        <!-- <img src="images/happy_emoji.png" alt="happy emoji"> -->
-        <!-- <i class="em em-stuck_out_tongue"></i> -->
-        <!-- <img src="images/calm_emoji.png" alt="calm emoji"> -->
-        <!-- <i class="em em-neutral_face"></i> -->
-        <!-- <i class="em em-relaxed"></i> -->
-        <!-- <i class="em em-smirk"></i> -->
-        <!-- <img src="images/anxious_emoji.png" alt="anxious emoji"> -->
-        <!-- <i class="em em-worried"></i> -->
-        <!-- <img src="images/sad_emoji.png" alt="sad emoji"> -->
-        <!-- <i class="em em-disappointed_relieved"></i> -->
-        <!-- <img src="images/angry_emoji.png" alt="angry emoji"> -->
-        <!-- <i class="em em-angry"></i> -->
+<!--       <div id="emojiLanding">
+
+      </div> -->
+      <div id="loginForm">
+        <input type="text"
+          name="username"
+          id="inputUsername"
+          class="form-control"
+          placeholder="username"
+          required autofocus/>
+        <input type="password"
+          name="password"
+          id="password"
+          class="form-control"
+          placeholder="password"
+          required/>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="remember-me"> remember me
+          </label>
+        </div>
+        <input type="hidden" name="submitted" value="1">
+        <input class="btn-login" type="submit" value="login" onClick="parent.location='self.html'">
+        <!-- <button type="button">register</button> -->
       </div>
-      <div id="loginButtons">
-        <button type="button" onClick="parent.location='login.html'">login</button>
-        <button type="button" onClick="parent.location='register.html'">register</button>
-      </div>
+      <p class="smaller">or <a href="register.html">register</a> if you do not have an account.</p>
     </div>
 
     <div id ="footer">
-      <!-- <p class="copyright">&copy; 2016 barbara compagnoni. All rights reserved.</p>
+ <!--      <p class="copyright">&copy; 2016 barbara compagnoni. All rights reserved.</p>
       <p class="copyright"> design: <a href="#">barbara compagnoni </a></p> -->
     </div>
 
