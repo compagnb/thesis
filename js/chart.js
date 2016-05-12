@@ -243,17 +243,17 @@ function makeLegend(metrics, chart){
 
     legend.append('rect')
         .attr('x', 20)
-        .attr('y', function(d, i){ return i *  10;})
-        .attr('width', 10)
-        .attr('height', 10)
+        .attr('y', function(d, i){ return i *  15;})
+        .attr('width', 15)
+        .attr('height', 15)
         .style('fill', function(d) {
         return color(d.measurement);
     });
 
     legend.append('text')
-        .attr('x', 35)
-        .attr('y', function(d, i){ return (i *  10) + 8;})
-        .style('font-size', '1em' )
+        .attr('x', 40)
+        .attr('y', function(d, i){ return (i *  15) + 11;})
+        .style('font-size', '1.2em' )
         .style('font-family', 'Roboto' )
         // .style('color',function(d) {
         // return color(d.measurement)})
@@ -272,6 +272,9 @@ function createGraphAxis(chart){
     chart.append("g")
           .attr("class", "y axis")
           .attr("transform", "translate(" +  width + ", 0)")
+          .style('font-family', 'Roboto' )
+          .style('font-weight', 'thin' )
+          .style('font-size', '1.15em' )
           .call(yAxis)
         .append("text")
           .attr("class", "label")
@@ -279,9 +282,7 @@ function createGraphAxis(chart){
           .attr("dy", ".71em")
           .attr("dx", ".71em")
           .style("text-anchor", "beginning")
-          .style('font-family', 'Roboto' )
-          .style('font-weight', 'thin' )
-          .style('font-size', '1.15em' )
+         
           // .text("metric reading");
 }
 

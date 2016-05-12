@@ -1,10 +1,12 @@
 var x, y, m, old_second, index;
 var imageWidth = 60;
-var imgNames = ['angry', 'confused', 'disappointed_relieved','grimacing','grinning', 'neutral_face', 'no_mouth', 'stuck_out_tongue','worried'];
+var imgNames = [ "1f636", "1f600", "1f601", "263a", "1f625", "1f61f", "1f620"];
+// var imgNames = ['angry', 'confused', 'disappointed_relieved','grimacing','grinning', 'neutral_face', 'no_mouth', 'stuck_out_tongue','worried'];
 // var imgNames = ['angry', 'blush', 'confounded', 'confused', 'cry', 'disappointed_relieved','grimacing','grinning', 'hushed', 'neutral_face', 'no_mouth', 'stuck_out_tongue', 'unamused', 'wink', 'worried', 'pizza'];
 
 var path = 'images/';
 var ext = '.jpg';
+// var ext = '.svg';
 // var ext = '.png';
 var count = 0;
 var count2 = 0;
