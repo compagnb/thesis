@@ -1,9 +1,61 @@
     // Define margins
-    var margin = {top: 20, right: 0, bottom: 30, left: 80},
+    var margin = {top: 20, right: 80, bottom: 30, left: 20},
     width = parseInt(d3.select("#chart").style("width")) - margin.left - margin.right,
     height = parseInt(d3.select("#chart").style("height")) - margin.top - margin.bottom;
+    
+    var intercept = 12.75709704;
+    
+    var coefficients = [0.06304758, -0.00126064, -0.6812107, 0.19716592, -0.24517675, 0.03837635, 0.11751085, 0.01119421];
 
-    var emojis = [];
+    // weekday, hour, curmin
+    var score = 0;
+    
+    
+    function getSubser(d){ 
+      var score = intercept + calCo(d["heartrate"], coefficients[0]) + calCo(d["steps"], coefficients[1]) + calCo(d["calories"], coefficients[2]) + calCo(d["gsr"], coefficients[3]) + calCo(d["skintemp"], coefficients[4]) + calCo(d["airtemp"], coefficients[5]) + calCo(d["weekday"], coefficients[6]) + calCo(d["hour"], coefficients[7])
+      // + calCo(d["min"], coefficients[8])
+      
+      return { 
+      wkDay: d["weekday"], 
+      hour: d["hour"], 
+      mins: d["min"], 
+      heartrate: d["heartrate"], 
+      steps: d["steps"], 
+      calories: d["calories"], 
+      gsr: d["gsr"], skintemp: 
+      d["skintemp"], 
+      airtemp: d["airtemp"], 
+      intcept: intercept,  
+      hco: calCo(d["heartrate"], coefficients[0]), 
+      stepco: calCo(d["steps"], coefficients[1]), 
+      calco: calCo(d["calories"], coefficients[2]), 
+      gsrco: calCo(d["gsr"], coefficients[3]), 
+      skinco: calCo(d["skintemp"], coefficients[4]), 
+      airco: calCo(d["airtemp"], coefficients[5]), 
+      wkdco: calCo(d["weekday"], coefficients[6]),
+      hrco: calCo(d["hour"], coefficients[7]),
+      // minco: calCo(d["min"], coefficients[8]),
+      score: score,
+      sigscore: sigmoid(score)
+      
+      }
+    }
+
+    function sigmoid(t) {
+      return 1/(1+Math.pow(Math.E, -t));
+    }
+    
+    function calCo(co, num){
+      return co*num
+    }
+    
+    
+  function type(d) {
+    d.emojis = +d.emojis;
+    return d;
+  }
+
+    // # heartrate, steps, calories, gsr, skintemp, airtemp,
     // ['grin', 'grinning', 'relaxed', 'worried', ' disappointed_relieved','angry', 'no_mouth']
 
     // Define date parser
@@ -19,7 +71,7 @@
         // .range([ '#545301', '#5f1c0c', '#29489a', '#832994']);
 
 
-    var date = 02;
+    var date = 04;
     var mindate = parseDate('2016-05-'+ date + ' 00:00:00'),
         maxdate = parseDate('2016-05-'+ date + ' 23:59:00');
 
@@ -29,7 +81,7 @@
 
     // Define axes
     var xAxis = d3.svg.axis().scale(xScale).orient("bottom");
-    var yAxis = d3.svg.axis().scale(yScale).orient("left");
+    var yAxis = d3.svg.axis().scale(yScale).orient("right");
 
     // Define lines
     var line = d3.svg.line().interpolate("basis")
@@ -45,11 +97,11 @@
                 .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
     // Read in data
-    d3.csv("data/sarahTotal.csv", function(error, data){
+    d3.csv("data/newsarahTotal.csv", function(error, data){
       if (error) throw error;
 
       // Set the color domain equal to the three product categories
-    var metricsIncluded = d3.keys(data[0]).filter(function(key){return (key !== "timestamp") && (key !== "day")  && (key !== "airtemp")  && (key !== "calories") && (key !== "steps")&& (key !== "excitement")&& (key !== "happy")&& (key !== "calm")&& (key !== "anxious")&& (key !== "sad")&& (key !== "angry") && (key !== "tired")  && (key !== "hungry")  && (key !== "bored")  && (key !== "exercise") && (key !== "thesis") && (key !== "sally")  && (key !== "barb")  && (key !== "sol")  && (key !== "work") && (key !== "home")  && (key !== "arash") && (key !== "emoji"); });
+    var metricsIncluded = d3.keys(data[0]).filter(function(key){return (key !== "timestamp") && (key !== "weekday") && (key !== "month") && (key !== "hour") && (key !== "min") &&  (key !== "excitement")&& (key !== "happy")&& (key !== "calm")&& (key !== "anxious")&& (key !== "sad")&& (key !== "angry") && (key !== "tired")  && (key !== "hungry")  && (key !== "bored")  && (key !== "exercise") && (key !== "thesis") && (key !== "sally")  && (key !== "barb")  && (key !== "sol")  && (key !== "work") && (key !== "home")  && (key !== "arash") && (key !== "emoji")  && (key !== "exhaca")  && (key !== "ansaan")  && (key !== "exha")  && (key !== "haca") && (key !== "anan") && (key !== "ansa")  && (key !== "calories")  && (key !== "airtemp")  && (key !== "steps"); });
 
     // data.forEach(function(d){
     //     emojis.push(d["emoji"]);
@@ -86,11 +138,17 @@
       // console.log(JSON.stringify(subset, null, 2))
 
       // metrics = An array of three objects, each of which contains an array of objects
-      var metrics = metricsIncluded.map(function(measurement){
+      var metrics = metricsIncluded.map(function(measurement , i){
         return {measurement: measurement, datapoints: subset.map(function(d){
-          return {date: d["timestamp"], emoji: d["emoji"], metric: +d[measurement]}
+          return { date: d["timestamp"], emoji: d["emoji"], metric: +d[measurement]}
         })}
       })
+      
+      var predictions = data.map(function(data){
+        return { date: data["timestamp"], datapoints: getSubser(data)}
+      })
+      
+      console.log(JSON.stringify(predictions, null, 2))
 
       // console.log(JSON.stringify(metrics, null, 2)) // to view the structure
 
@@ -116,57 +174,57 @@
 
 })
 
-//     // Define svg canvas
-//     var chart2 = d3.select("#chart2")
-//         .append("svg")
-//                 .attr("width", width + margin.left + margin.right)
-//                 .attr("height", height + margin.top + margin.bottom)
-//                 .append("g")
-//                 .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+    // Define svg canvas
+    var chart2 = d3.select("#chart2")
+        .append("svg")
+                .attr("width", width + margin.left + margin.right)
+                .attr("height", height + margin.top + margin.bottom)
+                .append("g")
+                .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-//     // Read in data
-//     d3.csv("data/sallyTotal.csv", function(error, data){
-//       if (error) throw error;
+    // Read in data
+    d3.csv("data/sallyTotalnew.csv", function(error, data){
+      if (error) throw error;
 
-//       // Set the color domain equal to the three product categories
-//     var sallyMetricsIncluded = d3.keys(data[0]).filter(function(key){return (key !== "timestamp") && (key !== "day")  && (key !== "airtemp")  && (key !== "calories") && (key !== "steps")&& (key !== "excitement")&& (key !== "happy")&& (key !== "calm")&& (key !== "anxious")&& (key !== "sad")&& (key !== "angry") && (key !== "tired")  && (key !== "hungry")  && (key !== "bored")  && (key !== "exercise") && (key !== "thesis") && (key !== "sarah")  && (key !== "barb")  && (key !== "sol")  && (key !== "work") && (key !== "home")  && (key !== "arash"); });
-
-
-//       color.domain(sallyMetricsIncluded);
-//       // console.log(JSON.stringify(data, null, 2)) // to view the structure
+      // Set the color domain equal to the three product categories
+    var sallyMetricsIncluded = d3.keys(data[0]).filter(function(key){return (key !== "timestamp") && (key !== "day")  && (key !== "airtemp")  && (key !== "calories") && (key !== "steps")&& (key !== "excitement")&& (key !== "happy")&& (key !== "calm")&& (key !== "anxious")&& (key !== "sad")&& (key !== "angry") && (key !== "tired")  && (key !== "hungry")  && (key !== "bored")  && (key !== "exercise") && (key !== "thesis") && (key !== "sarah")  && (key !== "barb")  && (key !== "sol")  && (key !== "work") && (key !== "home")  && (key !== "arash")&& (key !== "emoji"); });
 
 
-//       // Format the data field
-//       data.forEach(function(d){
-//         d["timestamp"] = parseDate(d["timestamp"])
-//       });
+      color.domain(sallyMetricsIncluded);
+      // console.log(JSON.stringify(data, null, 2)) // to view the structure
 
-//       // Filter the data to only include a single metric
-//       var subset = data.filter(function(el) { return (el.timestamp >= mindate) && (el.timestamp <= maxdate)});
 
-//       // var subset = data.filter(function(el) { return (el.timestamp >= mindate) && (el.timestamp <= maxdate)});
-//       // console.log(JSON.stringify(subset, null, 2))
+      // Format the data field
+      data.forEach(function(d){
+        d["timestamp"] = parseDate(d["timestamp"])
+      });
 
-//       // making json
-//       var sallyMetrics = sallyMetricsIncluded.map(function(measurement){
-//         return {measurement: measurement, datapoints: subset.map(function(d){
-//           return {date: d["timestamp"], metric: +d[measurement]}
-//         })}
-//       })
+      // Filter the data to only include a single metric
+      var subset = data.filter(function(el) { return (el.timestamp >= mindate) && (el.timestamp <= maxdate)});
 
-//       // console.log(JSON.stringify(sallyMetrics, null, 2)) // to view the structure
+      // var subset = data.filter(function(el) { return (el.timestamp >= mindate) && (el.timestamp <= maxdate)});
+      // console.log(JSON.stringify(subset, null, 2))
 
-//       // Set the domain of the axes
-//       xScale.domain(d3.extent(subset, function(d) {return d["timestamp"]; }));
+      // making json
+      var sallyMetrics = sallyMetricsIncluded.map(function(measurement){
+        return {measurement: measurement, datapoints: subset.map(function(d){
+          return {date: d["timestamp"],  emoji: d["emoji"], metric: +d[measurement]}
+        })}
+      })
 
-//       yScale.domain([0, 150]);
-//       // yScale.domain([0, 10]);
+      // console.log(JSON.stringify(sallyMetrics, null, 2)) // to view the structure
 
-//     makeLegend(sallyMetrics, chart2);
-//     createGraphAxis(chart2);
-//     addGraphMetrics(sallyMetrics, chart2);
-//     // addMouse(sallyMetrics, chart2);
-// })
+      // Set the domain of the axes
+      xScale.domain(d3.extent(subset, function(d) {return d["timestamp"]; }));
+
+      yScale.domain([0, 150]);
+      // yScale.domain([0, 10]);
+
+    makeLegend(sallyMetrics, chart2);
+    createGraphAxis(chart2);
+    addGraphMetrics(sallyMetrics, chart2);
+    addMouse(sallyMetrics, chart2);
+})
 
 function plusDate() {
     date++;
@@ -184,7 +242,7 @@ function makeLegend(metrics, chart){
         .attr('class', 'legend');
 
     legend.append('rect')
-        .attr('x', width - 50)
+        .attr('x', 20)
         .attr('y', function(d, i){ return i *  10;})
         .attr('width', 10)
         .attr('height', 10)
@@ -193,8 +251,12 @@ function makeLegend(metrics, chart){
     });
 
     legend.append('text')
-        .attr('x', width - 35)
-        .attr('y', function(d, i){ return (i *  10) + 9;})
+        .attr('x', 35)
+        .attr('y', function(d, i){ return (i *  10) + 8;})
+        .style('font-size', '1em' )
+        .style('font-family', 'Roboto' )
+        // .style('color',function(d) {
+        // return color(d.measurement)})
         .text(function(d){ return d.measurement; });
 }
 
@@ -202,10 +264,14 @@ function createGraphAxis(chart){
     chart.append("g")
           .attr("class", "x axis")
           .attr("transform", "translate(0," + height + ")")
+          .style('font-family', 'Roboto' )
+          .style('font-weight', 'thin' )
+          .style('font-size', '1.15em' )
           .call(xAxis);
 
     chart.append("g")
           .attr("class", "y axis")
+          .attr("transform", "translate(" +  width + ", 0)")
           .call(yAxis)
         .append("text")
           .attr("class", "label")
@@ -213,7 +279,10 @@ function createGraphAxis(chart){
           .attr("dy", ".71em")
           .attr("dx", ".71em")
           .style("text-anchor", "beginning")
-          .text("scale 1 to 10");
+          .style('font-family', 'Roboto' )
+          .style('font-weight', 'thin' )
+          .style('font-size', '1.15em' )
+          // .text("metric reading");
 }
 
 function addGraphMetrics(metrics, chart){
@@ -227,6 +296,7 @@ function addGraphMetrics(metrics, chart){
               .attr("d", function(d) {return line(d.datapoints); })
               .style("stroke", function(d) {return color(d.measurement); });
 }
+
 
 
 function addMouse(metrics, chart){
@@ -246,6 +316,9 @@ function addMouse(metrics, chart){
       .data(metrics)
       .enter()
       .append("g")
+      .attr("sth", function(d) {
+        console.log(d)
+      })
       .attr("class", "mouse-per-line");
 
     mousePerLine.append("circle")
@@ -260,7 +333,23 @@ function addMouse(metrics, chart){
       .style("opacity", "0");
 
     mousePerLine.append("text")
-      .attr("transform", "translate(10,-5)");
+      .style('font-family', 'Roboto' )
+      .style('font-weight', 'thin' )
+      .style('font-size', '1.15em' )
+      .attr("transform", "translate(15,-20)");
+
+    mousePerLine.append('emoji')
+        // .attr('symbol', 'smile')
+        .attr("transform", "translate(-18,-18)")
+        .attr('width', 30)
+        .attr('height', 30)
+              // function(d) { return "'" + d.emoji + "'"; })
+
+              // function(d,i) { return "'" + d.emoji + "'"})
+        // yScale.invert(pos.y) > 20 ? 'scream' : 'scream') // codes taken from http://www.emoji-cheat-sheet.com/ the enclosing :colons: aren't necessary
+        // do all the standard d3 stuff
+
+
 
     mouseG.append('svg:rect') // append a rect to catch mouse movements on canvas
       .attr('width', width) // can't catch mouse events on a g element
@@ -297,7 +386,7 @@ function addMouse(metrics, chart){
             // console.log(width/mouse[0])
             var xDate = xScale.invert(mouse[0]),
                 bisect = d3.bisector(function(d) { return d.date; }).right;
-                idx = bisect(d.measurement, xDate);
+                idx = bisect(d.datapoints, xDate);
 
             var beginning = 0,
                 end = lines[i].getTotalLength(),
@@ -315,21 +404,17 @@ function addMouse(metrics, chart){
             }
 
             d3.select(this).select('text')
-              .text(yScale.invert(pos.y).toFixed(2));
+              .text( d.measurement + ": "+ yScale.invert(pos.y).toFixed(2));
+              // console.log(d.datapoints[idx].emoji)
 
-            d3.select(this)
-                .append('emoji')
-                .attr("transform", "translate(-10,-10)")
-                .attr('symbol', d3.bisector(function(d) {
-                    return d.emoji;}).right)
 
-                      // function(d) { return "'" + d.emoji + "'"; })
+              //console.log(d.datapoints[i].emoji)
+            d3.select(this).select('emoji')
+                    //.attr("symbol", d.datapoints[idx].emoji)
+                    .attr('symbol', function(dd){
+                      return d.datapoints[idx].emoji
+                    })
 
-                      // function(d,i) { return "'" + d.emoji + "'"})
-                // yScale.invert(pos.y) > 20 ? 'scream' : 'scream') // codes taken from http://www.emoji-cheat-sheet.com/ the enclosing :colons: aren't necessary
-                // do all the standard d3 stuff
-                .attr('width', 20)
-                .attr('height', 20)
 
             return "translate(" + mouse[0] + "," + pos.y +")";
           });
@@ -369,3 +454,4 @@ function resize() {
 
     // Call the resize function
     resize();
+

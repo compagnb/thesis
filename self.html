@@ -27,6 +27,7 @@
 
       <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
       <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+      <script src="js/d3.tip.v0.6.3.js"></script>
 
       <title>feelin.it</title>
 
@@ -48,16 +49,16 @@
       <h1 class="brand">feelin.it</h1>
       <h2 class="tagline">sharing our emotional selves through biometrics</h2>
       <hr>
-      <nav class="nonmobile">
-        <ul class="nonmobile-nav">
-          <li class="active"><a href="./index2.php?action=login">login</a></li>
-          <li class="active"><a href="./index2.php?action=about">about</a></li>
-          <li class="active"><a href="./index2.php?action=howitworks">how it works</a></li>
-          <li class="active"><a href="./index2.php?action=register">sign up</a></li>
-        </ul>
-          <div class="mainuser"></div>
-          <div class="adduser1"></div>
-          <div class="adduser2"></div>
+      <!--<nav class="nonmobile">-->
+      <!--  <ul class="nonmobile-nav">-->
+      <!--    <li class="active"><a href="./index2.php?action=login">share</a></li>-->
+      <!--    <li class="active"><a href="./index2.php?action=about">journal</a></li>-->
+      <!--    <li class="active"><a href="./index2.php?action=howitworks">settings</a></li>-->
+      <!--    <li class="active"><a href="./index2.php?action=register">logout</a></li>-->
+      <!--  </ul>-->
+      <!--    <div class="mainuser"></div>-->
+      <!--    <div class="seconduser"></div>-->
+      <!--    <div class="adduser2"></div>-->
       </nav>
       <!-- <h4>exploring emotional responses through biometrics</h4> -->
     </div>
@@ -70,20 +71,25 @@
 
       <div id="user1">
         <svg id="chart"></svg>
-        <div id="mainuser"></div>
+        <div id="mainuser">
+          <img src="https://twemoji.maxcdn.com/svg/1f61f.svg">
+          <h1>sarah</h1>
+        </div>
 <!--         <div id="emojichart"></div> -->
       </div>
-      <div id="datescroll">
-        <button class="astext1"
+        <div id ="cent"><button class="astext1"
           onclick="minusDate()"> < </button>
+        <!--<hr class="rule">-->
         <button class="astext2"
-          onclick="plusDate()"> > </button>
-      </div>
+          onclick="plusDate()"> > </button></div>
       <div id="user2">
         <svg id="chart2"></svg>
-
-        <div id="seconduser"></div>
+        <div id="seconduser">
+          <img src="https://twemoji.maxcdn.com/svg/263a.svg">
+          <h1>sally</h1>
+        </div>
       </div>
+
 
 
 
@@ -95,6 +101,7 @@
 
   <!-- scripts start here </script>    <script src="js/circularHeatChart.js"></script>
    <script src="js/circular.js"></script>-->
+
   <script src="js/chart.js"></script>
   <script src="js/d3moji.js"></script>
 
