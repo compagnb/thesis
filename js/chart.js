@@ -437,6 +437,7 @@ function resize() {
     .call(xAxis);
 
   chart1.select('.y.axis')
+    .attr("transform", "translate(" +  width + ", 0)")
     .call(yAxis);
 
   // Force D3 to recalculate and update the line
