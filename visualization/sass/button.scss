@@ -1,0 +1,30 @@
+//_button.scss
+
+/* Buttons */
+   .btn-default{
+      background-color: rgba(243, 230, 201, 0.7);
+      box-shadow: none;
+      border-radius: .3em;
+   }
+
+   .btn-default:hover,.btn-default:focus {
+      background-color: rgba(243, 230, 201, 0.5);
+   }
+
+   .btn-login {
+      background-color: $waterblue-color;
+      border: 0;
+      border-radius: .3em;
+      font-weight: 300;
+      height: 2em;
+      line-height: 1em;
+      padding: 0 1em;
+      text-align: center;
+      text-decoration: none;
+      color: #ffffff;
+      font-size: 1em;
+   }
+
+  .btn-login:hover {
+    background-color: rgba(14, 44, 92, .7);
+  }

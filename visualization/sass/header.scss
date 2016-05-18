@@ -1,0 +1,36 @@
+//_header.scss
+
+  .masthead-brand {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .masthead-brand img{
+    margin-top: 35px;
+  }
+/*  .masthead-nav {
+    width: 0px;
+    height: 0px;
+  }*/
+  .masthead-nav > li {
+    margin-top: 25px;
+    visibility: hidden;
+    display: inline-block;
+  }
+  .masthead-nav > li > a {
+    padding: 0;
+    font: 1em $font-stack;
+    font-weight: 100;
+    text-decoration: none;
+    color: $waterblue-color;
+  }
+  .masthead-nav > li > a:hover,
+  .masthead-nav > li > a:focus {
+    color: $waterblue-color;
+  }
+  .masthead-nav > .active > a{
+    color: $waterblue-color;
+  }
+  .masthead-nav > .active > a:hover,
+  .masthead-nav > .active > a:focus {
+    color: $waterblue-color;
+  }

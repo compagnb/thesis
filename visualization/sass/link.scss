@@ -1,0 +1,37 @@
+// _link.scss
+
+/* Links */
+   a {
+      -moz-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+      -webkit-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+      -o-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+      -ms-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+      transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+      font: $font-stack;
+      text-decoration: none;
+      color: $waterblue-color;
+      font-weight: 300;
+      text-shadow: .5em;
+   }
+
+   a:focus, a:hover {
+      font: $font-stack;
+      text-decoration: none;
+      color: $waterblue-color;
+      font-weight: 300;
+      text-shadow: .5em;
+   }
+
+   .pinklinks{
+      color: $purple-color;
+      font-weight: 300;
+   }
+
+   .reminder-links{
+    padding: 20px;
+    font-size: .8em;
+  }
+  .reminder-links1{
+    padding: 20px;
+    font-size: .8em;
+  }
