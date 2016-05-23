@@ -38,24 +38,24 @@ How our bodies interpret data is the result of our brain processing the environm
 ## Table of Contents:
 
 ###  Introduction
-   #### 1.1 Sharing Our Emotional Selves Through Biometrics
+   1.1 Sharing Our Emotional Selves Through Biometrics
 ###  Signal Processing
-   #### 2.1 Stimuli
-   #### 2.2 Receiving, Transforming & Relaying Data
-   #### 2.3 Recording To Memory
-   #### 2.4 Responding To Stimuli
-   #### 2.5 Galvanic Skin Response
+   2.1 Stimuli
+   2.2 Receiving, Transforming & Relaying Data
+   2.3 Recording To Memory
+   2.4 Responding To Stimuli
+   2.5 Galvanic Skin Response
 ###  Tracking Signals
-   #### 3.1 Evolution of Tracking Technologies
+   3.1 Evolution of Tracking Technologies
 ### Building Feelin.it
-   #### 4.1 Choosing Wearable Technologies
-   #### 4.2 Emancipation of Basis Data
-   #### 4.3 Tracking Emotions
-   #### 4.4 Machine Learning
-   #### 4.5 Visualization of Data
+   4.1 Choosing Wearable Technologies
+   4.2 Emancipation of Basis Data
+   4.3 Tracking Emotions
+   4.4 Machine Learning
+   4.5 Visualization of Data
 ### Findings, Reflections, and Next Steps
-   #### 5.1 Reflections
-   #### 5.2 Evolving Platform
+   5.1 Reflections
+   5.2 Evolving Platform
 ### Bibliography
 
 
