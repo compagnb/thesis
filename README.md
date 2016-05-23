@@ -9,8 +9,8 @@ How our bodies interpret data is the result of our brain processing the environm
 ## [Link to WIP](https://compagnb.github.io/thesis)
 
 ## [Writing](https://github.com/compagnb/thesis/blob/master/writing/README.md)
-*   [Most recent as Google Doc WIP](https://docs.google.com/document/d/1H2OQRoMelT4nAto0R6krqRdbgBttI_JKlML2OzoJWDM)
-*   [Final Paper](https://github.com/compagnb/thesis/blob/master/writing/TableOfContents.md)
+*   [Final Paper as google doc](https://docs.google.com/document/d/1H2OQRoMelT4nAto0R6krqRdbgBttI_JKlML2OzoJWDM)
+*   [Final Paper in markdown](https://github.com/compagnb/thesis/blob/master/writing/TableOfContents.md)
 *   [Outline (Expanded)](https://github.com/compagnb/thesis/blob/master/writing/outLine.md)
 *   [Bibliography](https://github.com/compagnb/thesis/blob/master/writing/readingList.md)
 
