@@ -15,7 +15,25 @@ Aaron Hill/Daniel Sauter
 Production Website
 [https://compagnb.github.io/thesis/](https://compagnb.github.io/thesis/)
 
+
+© 2016 Barbara Compagnoni. All rights reserved.
+
+
+
 * * *
+
+
+
+## Abstract
+How our bodies interpret data is the result of our brain processing the environment around us through our senses. The data collected from the environment triggers a response from the brain to different parts of the body. These physiological and psychological reactions become a unique series of signals and chain reactions controlled by the nervous system. These experiences become memories when data of the event is stored in the human brain. By collecting the environmental stimuli in its entirety, as well as the biometric data created by the electrical and chemical reactions communicating these responses throughout the body from the brain, we are able to evaluate the data without the influence of these filters. Each snapshot of intimate communication within our bodies is documented through the sensor readings of wearable technologies.These processors present biological data to the subject through the perceptions and realities created by the goals of the companies that produce these technologies. Feelin.it is an opportunity free, share and compare this intimate data with others whom we choose.
+
+
+
+
+* * *
+
+
+
 
 ## Table of Contents:
 
@@ -39,6 +57,9 @@ Production Website
    #### 5.1 Reflections
    #### 5.2 Evolving Platform
 ### Bibliography
+
+
+
 
 * * *
 
@@ -158,7 +179,6 @@ To give the most comprehensive view of this data, each day is represented in its
 ![Fig. 5 Screengrab of feelin.it single view.](https://github.com/compagnb/thesis/blob/master/self.png)
 
 ![Fig. 6 Screengrab of feelin.it share view. ](https://github.com/compagnb/thesis/blob/master/share.png)
-A live demo can be viewed at: [https://compagnb.github.io/thesis/](https://compagnb.github.io/thesis/). Sample code can be found at: [https://github.com/compagnb/thesis](https://github.com/compagnb/thesis)
 
 
 ## 5 FINDINGS, REFLECTIONS AND NEXT STEPS
@@ -170,6 +190,16 @@ The work involved with building feelin.it has challenged my skills in both front
 
 ### 5.2 Evolving Platform
 In order for feelin.it to grow into something a tool that puts the power of self into the user further developments need to be made. The first adjustment that would need to be made would be revising the back end to allow for more than the test set of users to utilize, view and share their biometric and emotional data with feelin.it. This would require each user to be registered into the postgres database as a member with profile information, allowing for the retrieval of biometric and journal data. Doing this would open the platform up to more users.  Next, the addition of triggers to inform users of their friend’s emotional states would be introduced. By adding code to aggregate emotional data and ping-shared users with notifications of either an extreme high or low, would build and maintain relationships between users. This would also allow for users to support each other when needed.  Prior to adding any features allowing users to customize model predictors or emojis, a journal and summary of predictions would need to be added. By adding a summary of predictions, it would allow the user to see how accurate the predictions are. The addition of a journal, with both standard and user input categories for emotions, would provide data for the model to improve itself over time. Once this is completed customization features can be added to allow users to train the data for emotions not included in the original data set as well as their own visuals for them.  Prior to releasing a beta version of this tool, further user testing is needed.
+
+![Fig. 7 Product shot of feelin.it ](https://github.com/compagnb/thesis/blob/master/final.jpg)
+A live demo can be viewed at: [https://compagnb.github.io/thesis/](https://compagnb.github.io/thesis/)
+Sample code can be found at: [https://github.com/compagnb/thesis](https://github.com/compagnb/thesis)
+
+
+
+* * *
+
+
 
 ## Bibliography
 

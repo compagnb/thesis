@@ -55,4 +55,4 @@ To give the most comprehensive view of this data, each day is represented in its
 ![Fig. 5 Screengrab of feelin.it single view.](https://github.com/compagnb/thesis/blob/master/self.png)
 
 ![Fig. 6 Screengrab of feelin.it share view. ](https://github.com/compagnb/thesis/blob/master/share.png)
-A live demo can be viewed at: [https://compagnb.github.io/thesis/](https://compagnb.github.io/thesis/). Sample code can be found at: [https://github.com/compagnb/thesis](https://github.com/compagnb/thesis)
+
