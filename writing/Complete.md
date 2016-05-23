@@ -138,13 +138,16 @@ Although the Basis Peak also has a three-dimensional accelerometer like the Fitb
 
 ![Fig. 1  Visual of which trackers have API access.](https://github.com/compagnb/thesis/blob/master/apwho.jpg)
 
+Fig. 1  Visual of which trackers have API access.
+
 ### 4.2 Emancipation of Basis Data.
 Data recorded by the sensors in the Basis Peak, are transmitted to the Basis server through the wireless connection to a computer or smartphone. Upon further investigation of the Basis web application, it appears that the sensor data stored in their database is pulled into the application once every ten minutes using a rest API. Leveraging this workflow to advantage the emancipation process, I created an open source server application with node.js to pull the data as it refreshed.
 
 This server application utilizes two main node modules to function. The request module is used to request data from the basis web portal. Once the login page is requested, POST methods are used in order to remotely login to the portal. After login has been made successful, once again with the request module, the data is pulled as an object. The new data received is parsed and cleaned. Upon completion of this task the pg module is needed in order to send this data to the feelin.it postgres database, where the user has complete control over their own data.
 
 ![Fig. 2 Data structure of biometrics. ](https://github.com/compagnb/thesis/blob/master/datastructure.png)
-More in depth documentation of this process can be found at: [https://github.com/compagnb/basisExport](https://github.com/compagnb/basisExport)
+
+Fig. 2 Data structure of biometrics. More in depth documentation of this process can be found at: [https://github.com/compagnb/basisExport](https://github.com/compagnb/basisExport)
 
 ### 4.3 Tracking Emotions
 Now that the biometric data has been emancipated, we can witness the change in biometric readings such as heart rate, gsr, and temperature, as a result of signals being transmitted throughout our bodies. At this point, we are able to see that things are changing, but still do not have an idea of why or what causes these changes without secondary input from the user telling us more information about these moments.
@@ -152,7 +155,8 @@ Now that the biometric data has been emancipated, we can witness the change in b
 In order to start to break down these physiological changes into emotions, multiple subjects were asked to keep an emotion and activity diary for a period of three weeks. During this time, the subjects recorded not only what they were doing, but how they felt, down to the minute of when they were doing/feeling it. These feelings were divided into six main categories: angry, sad, anxious, calm, happy and excited. As users began to journal their feelings and activities many users began adding different emotions such as, bored, tired, and hungry. This data was pulled at the end of each day, ideally merging into the feelin.it database.
 
 ![Fig. 3 Sample data recorded in journal.](https://github.com/compagnb/thesis/blob/master/journal.png)
-These journals can be viewed at: [https://docs.google.com/a/newschool.edu/spreadsheets/d/1rG_J2YmQL6LRoZ0jfvg9cOUkfJ92bTHzPte9DAH9S5M/edit?usp=sharing](https://docs.google.com/a/newschool.edu/spreadsheets/d/1rG_J2YmQL6LRoZ0jfvg9cOUkfJ92bTHzPte9DAH9S5M/edit?usp=sharing)
+
+Fig. 3 Sample data recorded in journal.These journals can be viewed at: [https://docs.google.com/a/newschool.edu/spreadsheets/d/1rG_J2YmQL6LRoZ0jfvg9cOUkfJ92bTHzPte9DAH9S5M/edit?usp=sharing](https://docs.google.com/a/newschool.edu/spreadsheets/d/1rG_J2YmQL6LRoZ0jfvg9cOUkfJ92bTHzPte9DAH9S5M/edit?usp=sharing)
 
 ### 4.4 Machine Learning
 With both biometric data and user perception data available a method of data analysis that automates mathematical model building using algorithms, known as machine learning, can be used to find correlations between emotions and the corresponding biometrics at that time.
@@ -161,9 +165,10 @@ In this case, the model will be built using classification task in machine learn
 
 To have the ability to predict each emotion, a prediction model needs to be created for each emotion included. The initial results were not successful for prediction. Although the accuracy was high, there was a 0.01% and below true positive rate, due to the small data set size. In order to compensate for that, more iterations of the algorithm were added, as well as different combinations of emotions were also included. For example, anger and anxious were two emotions that were frequently found together, so one model had both of these emotions grouped together. After a few iterations of merging emotions, I felt it was best to simplify this more do to positive emotions, including “excited”, “happy”, and “calm”, and negative emotions, including “angry”, “sad” and “anxious”. This resulted in good accuracy and just about a 60% true positive rate.
 
-![Fig. 4  Initial results from machine learning.](https://github.com/compagnb/thesis/blob/master/ml1.png)
-![Fig. 4  Modified emotion category results from machine learning.](https://github.com/compagnb/thesis/blob/master/ml2.png)
-The machine learning tasks and results can be viewed at: [https://github.com/compagnb/IS_Emotion_ML](https://github.com/compagnb/IS_Emotion_ML)
+![Fig. 4A  Initial results from machine learning.](https://github.com/compagnb/thesis/blob/master/ml1.png)
+![Fig. 4B Modified emotion category results from machine learning.](https://github.com/compagnb/thesis/blob/master/ml2.png)
+
+Fig. 4  Initial and modified emotion category results from machine learning.The machine learning tasks and results can be viewed at: [https://github.com/compagnb/IS_Emotion_ML](https://github.com/compagnb/IS_Emotion_ML)
 
 Just as in regression, coefficients of these models are now incorporated into feelin.it to predict emotion as it is currently being felt without the use of a journal.
 
@@ -178,7 +183,11 @@ To give the most comprehensive view of this data, each day is represented in its
 
 ![Fig. 5 Screengrab of feelin.it single view.](https://github.com/compagnb/thesis/blob/master/self.png)
 
+Fig. 5 Screengrab of feelin.it single view.
+
 ![Fig. 6 Screengrab of feelin.it share view. ](https://github.com/compagnb/thesis/blob/master/share.png)
+
+Fig. 6 Screengrab of feelin.it share view.
 
 
 ## 5 FINDINGS, REFLECTIONS AND NEXT STEPS
@@ -192,6 +201,8 @@ The work involved with building feelin.it has challenged my skills in both front
 In order for feelin.it to grow into something a tool that puts the power of self into the user further developments need to be made. The first adjustment that would need to be made would be revising the back end to allow for more than the test set of users to utilize, view and share their biometric and emotional data with feelin.it. This would require each user to be registered into the postgres database as a member with profile information, allowing for the retrieval of biometric and journal data. Doing this would open the platform up to more users.  Next, the addition of triggers to inform users of their friend’s emotional states would be introduced. By adding code to aggregate emotional data and ping-shared users with notifications of either an extreme high or low, would build and maintain relationships between users. This would also allow for users to support each other when needed.  Prior to adding any features allowing users to customize model predictors or emojis, a journal and summary of predictions would need to be added. By adding a summary of predictions, it would allow the user to see how accurate the predictions are. The addition of a journal, with both standard and user input categories for emotions, would provide data for the model to improve itself over time. Once this is completed customization features can be added to allow users to train the data for emotions not included in the original data set as well as their own visuals for them.  Prior to releasing a beta version of this tool, further user testing is needed.
 
 ![Fig. 7 Product shot of feelin.it ](https://github.com/compagnb/thesis/blob/master/final.jpg)
+
+Fig. 7 Product shot of feelin.it
 A live demo can be viewed at: [https://compagnb.github.io/thesis/](https://compagnb.github.io/thesis/)
 Sample code can be found at: [https://github.com/compagnb/thesis](https://github.com/compagnb/thesis)
 
