@@ -1,8 +1,8 @@
-# 3 TRACKING SIGNALS.
+## 3 TRACKING SIGNALS.
 
 Retrieval, processing, and systemic responses of/to sensory data all use signals to communicate to other parts of the body. By tracking signals information can be used to help detect, diagnose, and monitor current or potential issues that may arise. In the human body this may relate to disease as noted in an increased temperature or fever. In either case tracking this data will facilitate and determine a course of treatment or solution to the issue.
 
-## 3.1 History of Tracking Technologies.
+### 3.1 History of Tracking Technologies.
 It was not until 1815, that a French physician, named René Laënnec, invented the stethoscope. (New York Times 2012) This was the first milestone to be made in technologies to monitor the human. After this initial milestone, more achievements were made in advancing this technology for monitoring the body.
 In 1874, Richard Caton, used a galvanometer to monitor the neural impulses of animals, leading to the development of an electroencephalogram, or EEG. In 1924, Hans Berger, a German physiologist and psychiatrist, expanded on Caton’s research and began monitoring human neural impulses, or brain activity. (New York Times 2012) EEG’s measure this activity through electrodes placed on the scalp of the subject. Since the electrodes are placed on top of the skin, not requiring surgery, this is seen as a noninvasive method. The electrodes record the voltage fluctuations resulting from communication of neural cells in the brain. (Niedermeyer and da Silva 2004) Since the voltage is measured through the cranial bone, skin and other areas of the brain, sometimes it causes too much interference to produce an accurate signal for certain areas of the brain. If the electrodes were attached to more internal sections of the brain, which are more intrusive, the noise would be minimal. (Schlögl , Slater and Pfurtschelle 2002)
 
