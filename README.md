@@ -1,10 +1,10 @@
 # Feelin.it
 
 ![screenshot](https://github.com/compagnb/thesis/blob/master/screenshot.png)
+![product shot](https://github.com/compagnb/thesis/blob/master/final.jpg)
 
 ## Abstract
-How our bodies interpret data is the result of our brain processing the environment around us through our senses. The data collected from the environment triggers a response from the brain to different parts of the body. These physiological and psychological reactions become a unique series of signals and chain reactions controlled by the nervous system. These experiences become memories when data of the event is stored in the human brain. By collecting the environmental stimuli in its entirety, as well as the biometric data created by the electrical and chemical reactions communicating these responses throughout the body from the brain, we are able to evaluate the data without the influence of these filters.
-Each snapshot of intimate communication within our bodies is documented through the sensor readings of wearable technologies.These processors present biological data to the subject through the perceptions and realities created by the goals of the companies that produce these technologies. Feelin.it is an opportunity free, share and compare this intimate data with others whom we choose.
+How our bodies interpret data is the result of our brain processing the environment around us through our senses. The data collected from the environment triggers a response from the brain to different parts of the body. These physiological and psychological reactions become a unique series of signals and chain reactions controlled by the nervous system. These experiences become memories when data of the event is stored in the human brain. By collecting the environmental stimuli in its entirety, as well as the biometric data created by the electrical and chemical reactions communicating these responses throughout the body from the brain, we are able to evaluate the data without the influence of these filters. Each snapshot of intimate communication within our bodies is documented through the sensor readings of wearable technologies.These processors present biological data to the subject through the perceptions and realities created by the goals of the companies that produce these technologies. Feelin.it is an opportunity free, share and compare this intimate data with others whom we choose.
 
 ## [Link to WIP](https://compagnb.github.io/thesis)
 
