@@ -203,7 +203,9 @@ In order for feelin.it to grow into something a tool that puts the power of self
 ![Fig. 7 Product shot of feelin.it ](https://github.com/compagnb/thesis/blob/master/final.jpg)
 
 Fig. 7 Product shot of feelin.it
+
 A live demo can be viewed at: [https://compagnb.github.io/thesis/](https://compagnb.github.io/thesis/)
+
 Sample code can be found at: [https://github.com/compagnb/thesis](https://github.com/compagnb/thesis)
 
 
